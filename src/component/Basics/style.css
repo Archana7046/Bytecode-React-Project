@@ -1,34 +1,91 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* -- box-sizing: border-box;  */
     font-family: "Lato", sans-serif;
   }
   
+.heading{
+  text-align: center;
+margin-top: 1em;
+font-size: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(11, 20, 46);
+}
+.members{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 70px;
+  color: #e75050;
+}
+  
   html {
+   
     height: 100%;
-    background: #d8fab8;
+    
+    /* background: #78ec0a; */
+    /* https://wallpaperaccess.com/full/187161.jpg
+    https://i.pinimg.com/originals/73/d3/c1/73d3c188adb223ae5d281f183e40ef9e.jpg
+
+    
+    https://us.123rf.com/450wm/sumaetho/sumaetho1501/sumaetho150100444/36056927-stock-vector-blue-white-light-polygonal-mosaic-background-vector-illustration-creative-business-design-templates.jpg?ver=6
+
+    https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg
+https://c1.wallpaperflare.com/preview/544/762/529/background-green-monochrome-apple-green.jpg
+https://media.istockphoto.com/photos/green-abstract-background-picture-id168367507?b=1&k=20&m=168367507&s=170667a&w=0&h=wfHMhwGPhsQeQx9VLHReCfwKmMdVY6eA0T89Tn4WgXc= 
+
+
+https://c1.wallpaperflare.com/preview/544/762/529/background-green-monochrome-apple-green.jpg
+
+https://images.all-free-download.com/images/graphiclarge/green_water_drops_background_picture_169461.jpg
+
+https://images.all-free-download.com/images/graphiclarge/green_water_drops_background_picture_169461.jpg
+https://images.creativemarket.com/0.1.0/ps/2397317/1360/906/m1/fpnw/wm1/k9gdmkx8vzskmdidii1z8chkiy8wozhdghebjkmjrkwhct0qe2rasftrfrklpnxc-.jpg?1489341411&s=53f9db3b6d35474f469c90fc3347fddb
+
     background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+    https://lh3.googleusercontent.com/proxy/hLx-IIRGCAt2qvMWJbt3873qtGxwmOBEwsVBh3PyFqY62-4_LFdaRs-GRwvYPL75_l_FbeaAWa20ZjCKHEApdlcQTcaSZDqeJYVz5OGr2I_Q9wFCgLxSNqPbx4R8GktXemkq389fscFGQ0Ehttps://lh3.googleusercontent.com/proxy/hLx-IIRGCAt2qvMWJbt3873qtGxwmOBEwsVBh3PyFqY62-4_LFdaRs-GRwvYPL75_l_FbeaAWa20ZjCKHEApdlcQTcaSZDqeJYVz5OGr2I_Q9wFCgLxSNqPbx4R8GktXemkq389fscFGQ0E 
+    
+    */
+    display: block;
+    
+     background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg)  ; 
+    
+     background-position: 50% 0;
+     background-size: cover;
+    
+    
+    /* opacity: 0.2;  */
+    filter:opacity (0.5);
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 400;
 
   }
-  
+  /* .html::after{
+    opacity: 0.2;
+    background-image: url(https://media.istockphoto.com/photos/green-abstract-background-picture-id168367507?b=1&k=20&m=168367507&s=170667a&w=0&h=wfHMhwGPhsQeQx9VLHReCfwKmMdVY6eA0T89Tn4WgXc= )  ;
+     background-repeat: no-repeat;
+     background-position: 50% 0;
+     background-size: cover;
+  } */
   *,
   *:before,
   *:after {
     box-sizing: inherit;
+    box-sizing: border-box;
     
   }
  
+
 
   .subtle {
     color: rgb(1, 68, 6);
   }
   
   .main-card--cointainer {
+    
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 500px));
     grid-gap: 50px;
@@ -36,6 +93,7 @@
   }
   
   .card-container {
+    color: chartreuse;
     margin: 25px auto 0;
     position: relative;
     display: grid;
@@ -45,27 +103,49 @@
   }
   
   .card-container img {
+  
+    display: inline-block;
     max-width: 100%;
     height: 300px;
     padding-left: 20%;
+  
   }
   
   .card {
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(223, 247, 216);
     padding: 30px;
     position: relative;
-    box-shadow: 0 0 50px rgba(41, 40, 40, 0.07);
+    box-shadow: 0 0 50px rgba(250, 11, 103, 0.07);
     z-index: 1;
     transition: 0.6s;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
-transform-style: flat;
-
+    box-shadow: 0px 0px 5px 2px rgba(233, 250, 3, 0.4);
+    transform-style: flat;
+   
+    
   }
   .card:hover{ 
-
-
-box-shadow: 0px 0px 35px 3px rgba(0,0,0,0.4);
-transform-style: preserve-3d;
+    border:  10px solid #bb0fd1;
+    animation: colorchg 1s infinite;
+    /* box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0px 0px 50px 20px rgba(13, 252, 5, 0.4);
+    transform-style: preserve-3d;
+  }
+  @keyframes colorchg{
+    0%{
+      border: 5px solid green;
+    }
+    25%{
+      border: 5px solid yellow;
+    }
+    50%{
+      border: 5px solid cyan;
+    }
+    75%{
+      border: 5px solid magenta;
+    }
+    100%{
+      border: 5px solid blue;
+    }
   }
   .card-body {
     
@@ -73,47 +153,81 @@ transform-style: preserve-3d;
     
   }
   
-  .card-number {
-    margin-top: 15px;
-  }
+  
   
   .card-circle {
-    border: 1px solid #aaa;
-    border-radius: 50%;
-    display: inline-block;
-    line-height: 22px;
-    font-size: 12px;
-    height: 25px;
-    text-align: center;
-    width: 25px;
-  }
-  
-  .card-author {
     
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    margin-left: 100px;
+   }
+
+ul li{
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+ 
+}
+.icons{
+
+  
+  border-radius: 50%;
+  
+}
+
+.icons:hover{
+  transition: 5s ease-in-out;
+  color: #d10f97;
+  transform: scale(0.9);
+  box-shadow: #e75050;
+}
+/*
+li{
+  transition: 1s ease-in-out;
+  z-index: -2;
+}
+*/
+   /* .card-circle:hover{
+    
+    transform: scale(0.9);
+  }  */
+  .card-author {
+    color: rgb(176, 128, 240);
     display: block;
-    font-size: 12px;
+    font-size: 2px;
     letter-spacing: 0.5px;
     margin: 15px 0 0;
+    margin-left: 20px;
     text-transform: uppercase;
   }
   
   .card-title {
     font-family: "Cormorant Garamond", serif;
+    text-align: center;
     font-size: 45px;
     font-weight: 300;
     line-height: 60px;
-    margin: 10px 0;
+    margin: 15px 0;
     color: yellowgreen;
     text-transform: capitalize;
   }
   
   .card-description {
     /* display: inline-block; */
+   
+  font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     margin: 10px 0;
+    color: rgb(231, 116, 50);
+    overflow: hidden;
+   
   }
-  
+  .card-description:hover{
+    overflow: visible;
+  }
   .card-read {
     cursor: pointer;
     font-size: 14px;
@@ -123,6 +237,7 @@ transform-style: preserve-3d;
     position: relative;
     text-align: right;
     text-transform: uppercase;
+   
   }
   
   .card-read:after {
@@ -177,6 +292,7 @@ transform-style: preserve-3d;
   
   .navbar {
     padding-top: 50px;
+    padding-bottom: 30px;
     text-align: center;
   }
   
